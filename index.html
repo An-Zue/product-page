@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Product page</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Noto+Serif&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a class="header-brand" href="">Regrocery</a>
+			<button class="cart-button">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="20px" viewBox="0 0 14 20" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g transform="translate(-1.000000, 0.000000)" fill="currentColor" fill-rule="nonzero">
+							<path d="M11.7692308,5.12121212 L11.7692308,4.24242424 C11.7692308,1.90909091 10.0730769,0 8,0 C5.92692308,0 4.23076923,1.90909091 4.23076923,4.24242424 L4.23076923,5.12121212 L2.07692308,5.12121212 C1.71794872,5.12121212 1.44103613,5.22659055 1.2461853,5.43734741 C1.05133448,5.64810427 0.969272711,5.94676625 1,6.33333333 L1,19.3636364 C1,19.6969697 1.24230769,19.969697 1.53846154,19.969697 L14.4615385,19.969697 C14.7576923,19.969697 15,19.6969697 15,19.3636364 L15,6.33333333 C15.0096691,5.99462295 14.9141796,5.71234891 14.7135315,5.48651123 C14.5128834,5.26067355 14.2493985,5.13890718 13.9230769,5.12121212 L11.7692308,5.12121212 Z M5.30769231,4.27272727 C5.30769231,2.60606061 6.51923077,1.24242424 8,1.24242424 C9.48076923,1.24242424 10.6923077,2.60606061 10.6923077,4.27272727 L10.6923077,5.15151515 L5.30769231,5.15151515 L5.30769231,4.27272727 Z M13.9230769,18.7575758 L2.07692308,18.7575758 L2.07692308,6.33333333 L4.23076923,6.33333333 L4.23076923,9.09090909 L5.30769231,9.09090909 L5.30769231,6.33333333 L10.6923077,6.33333333 L10.6923077,9.09090909 L11.7692308,9.09090909 L11.7692308,6.33333333 L13.9230769,6.33333333 L13.9230769,18.7575758 Z"></path>
+						</g>
+					</g>
+				</svg>
+				<span class="cart-count">(0)</span>
+			</button>
+			<button class="menu-button close" aria-label="toggle navigation">
+				<span class="ball open left"></span>
+				<span class="ball close left"></span>
+				<span class="ball close top"></span>
+				<span class="ball"></span>
+				<span class="ball close bottom"></span>
+				<span class="ball close right"></span>
+				<span class="ball open right"></span>
+			</button>
+		</header>
+		<section class="menu">
+			<nav>
+				<ul>
+					<li><a href="">Pellentesque</a></li>
+					<li><a href="">Libero</a></li>
+					<li><a href="">Vestibulum</a></li>
+					<li><a href="">Blandit</a></li>
+				</ul>
+			</nav>
+		</section>
+		<main>
+			<div class="product-container">
+				<img src="product.jpg" class="blur">
+			</div>
+			<div class="description">
+				<h1>Cripple Creek</h1>
+				<span class="description__price">19.80 € - 100g</span>
+				<p>Elementum tempus egestas sed sed risus pretium quam. Purus in mollis nunc sed id semper risus in. Tellus pellentesque eu tincidunt tortor.</p>
+				<div class="quantity-selector">
+					<button>-</button>
+					<input data-item-quantity="1" data-quantity="" type="number" value="1" min="1" name="data-quantity">
+					<button>+</button>
+				</div>
+				<button class="add-to-cart">Ajouter au panier</button>
+				<div class="packaging-container">
+					<img src="packaging.jpg">
+				</div>
+				<p>Nullam suscipit feugiat blandit. Ut vestibulum iaculis nisi, in tempor mauris dictum nec. Cras eget enim lacinia purus pellentesque elementum quis et neque. Duis porttitor lorem dolor, at venenatis purus vestibulum.</p>
+				<ul class="ingredient-list">
+					<li>
+						<img src="void.jpg">
+					</li>
+					<li>
+						<img src="void.jpg">
+					</li>
+					<li>
+						<img src="void.jpg">
+					</li>
+					<li>
+						<img src="void.jpg">
+					</li>
+				</ul>
+				<button class="ingredient-list-button">Voir tous les ingrédients</button>
+				<p>Nam hendrerit justo cursus nibh gravida lobortis. Quisque sollicitudin gravida libero sed consequat. Aliquam volutpat nunc vitae neque vehicula sollicitudin vitae.</p>
+			</div>
+		</main>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
